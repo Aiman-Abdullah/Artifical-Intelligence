@@ -1,0 +1,46 @@
+
+
+
+(operator
+movedown
+(params
+(<up> square)(<from> Position)(<to> Position))
+(preconds
+(free <to>)(on <up> <from>)(availableposition <from>)(availableposition <to>)(decrease3 <to> <from>))
+(effects
+(del free <to>)(del on <up> <from>)(free <from>)(on <up> <to>))
+)
+
+
+
+(operator
+moveright
+(params
+(<up> square)(<from> Position)(<to> Position))
+(preconds
+(free <to>)(on <up> <from>)(availableposition <from>)(availableposition <to>)(decrease1 <to> <from>))
+(effects
+(del free <to>)(del on <up> <from>)(free <from>)(on <up> <to>))
+)
+
+
+(operator
+moveup
+(params
+(<up> square)(<from> Position)(<to> Position))
+(preconds
+(free <to>)(on <up> <from>)(availableposition <from>)(availableposition <to>)(increase3 <to> <from>))
+(effects
+(del free <to>)(del on <up> <from>)(free <from>)(on <up> <to>))
+)
+
+
+(operator
+moveleft
+(params
+(<up> square)(<from> Position)(<to> Position))
+(preconds
+(free <to>)(on <up> <from>)(availableposition <from>)(availableposition <to>)(increase1 <to> <from>))
+(effects
+(del free <to>)(del on <up> <from>)(free <from>)(on <up> <to>))
+)

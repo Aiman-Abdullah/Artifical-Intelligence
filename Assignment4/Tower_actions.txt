@@ -1,0 +1,12 @@
+
+
+(operator
+  move_disk
+  (params
+   (<up> Object) (<down> Object) (<floor> Object))
+  (preconds
+   (on <up> <down>) (clear <up>) (clear <floor>) (minimal <up> <floor>))
+  (effects
+   (del on <up> <down>) (del clear <floor>) (clear <down>) (on <up> <floor>)))
+
+

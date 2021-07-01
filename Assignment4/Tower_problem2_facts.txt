@@ -1,0 +1,16 @@
+(disk1 Object)
+(disk2 Object)
+(disk3 Object)
+(disk4 Object)
+(disk5 Object)
+(A Object)
+(B Object)
+(C Object)
+
+(preconds
+ (on disk1 disk2) (on disk2 disk3) (on disk3 disk4) (on disk4 disk5) (on disk5 C) (clear disk1) (clear A) (clear B) (minimal disk1 A) (minimal disk3 C) (minimal disk3 A) (minimal disk1 B) (minimal disk3 B) (minimal disk5 C) (minimal disk1 disk2) (minimal disk2 disk4)
+(minimal disk1 C) (minimal disk1 disk3) (minimal disk3 disk5) (minimal disk2 disk5) (minimal disk2 disk3) (minimal disk4 C) (minimal disk1 disk4) (minimal disk3 disk4) (minimal disk4 B) (minimal disk2 A) (minimal disk4 disk5) (minimal disk2 C) (minimal disk2 B) (minimal disk4 A) (minimal disk5 A) (minimal disk1 disk5) (minimal disk5 B))
+
+
+(effects
+ (on disk1 disk2) (on disk2 disk3) (on disk3 disk4) (on disk4 disk5) (on disk5 A))

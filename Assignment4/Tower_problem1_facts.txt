@@ -1,0 +1,12 @@
+(disk1 Object)
+(disk2 Object)
+(A Object)
+(B Object)
+(C Object)
+
+(preconds
+ (on disk1 disk2) (on disk2 A) (clear disk1) (clear B) (clear C) (minimal disk1 disk2) (minimal disk1 A) (minimal disk1 B) (minimal disk1 C) (minimal disk2 A) (minimal disk2 B) (minimal disk2 C))
+
+
+(effects
+ (on disk1 B) (on disk2 C))

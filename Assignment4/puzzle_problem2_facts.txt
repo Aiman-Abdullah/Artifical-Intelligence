@@ -1,0 +1,34 @@
+(n1 square)
+(n2 square)
+(n3 square)
+(n4 square)
+(n5 square)
+(n6 square)
+(n7 square)
+(position1 Position)
+(position2 Position)
+(position3 Position)
+(position4 Position)
+(position5 Position)
+(position6 Position)
+(position7 Position)
+(position8 Position)
+(position9 Position)
+
+
+(preconds
+(square n1) (square n2) (square n3) (square n4) (square n5) (square n6) (square n7)
+(availableposition position1) (availableposition position2) (availableposition position3) (availableposition position4) (availableposition position5) (availableposition position6) (on n6 position4) (on n7 position3)
+(availableposition position7) (availableposition position8) (availableposition position9) (on n1 position9) (on n2 position8) (on n3 position7) (on n4 position6) (on n5 position5) (free position2) (free position1)
+
+
+
+(increase1 position1 position2) (increase1 position2 position3) (increase1 position4 position5) (increase1 position5 position6) (increase1 position7 location8) (increase1 position8 position9)
+(decrease1 position9 position8) (decrease1 position8 position7) (decrease1 position6 position5) (decrease1 position5 position4) (decrease1 position3 position2) (decrease1 position2 position1)
+(increase3 position1 position4) (increase3 position4 position7) (increase3 position3 position6) (increase3 position6 position9) (increase3 position2 position5) (increase3 position5 position8)
+(decrease3 position4 position1) (decrease3 position7 position4) (decrease3 position6 position3) (decrease3 position9 position6) (decrease3 position5 position2) (decrease3 position8 position5))
+
+
+
+(effects
+(on n1 position1) (on n2 position2) (on n3 position3) (on n4 position4) (on n5 position5) (on n6 position6) (on n7 position7))
